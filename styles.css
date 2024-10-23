@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: Arial, var(--system-ui), sans-serif;
+    font-family: "Open Sans", var(--system-ui), sans-serif;
 }
 
 .flex-body {
@@ -86,13 +86,16 @@ font-family: "grenzeregular", var(--system-ui);
 
 .main-content {
     flex-basis: 65%;
-    padding: 3rem;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    background-color: rgba(241, 241, 241, 0.834);
 }
 
+.main-content > * {
+    padding: 0 3.5rem;
+}
 .main-content .introduction-section {
     font-family: "bitterregular", var(--system-ui);
 }
@@ -101,7 +104,26 @@ font-family: "grenzeregular", var(--system-ui);
     margin-bottom: 2rem;
 }
 
-.main-content .form-section form {
+.main-content .form-section {
+    background-color: white;
+
+}
+
+.main-content .form-section .form-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .form-section .form-item-wrapper > .row {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+.main-content .form-section .form-item-wrapper > .row > .form-item {
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -109,3 +131,4 @@ font-family: "grenzeregular", var(--system-ui);
     border: 0;
     padding: 0;
 }
+

@@ -25,20 +25,45 @@
                 <p>You <em>know</em> you’re craving it.</p>
             </div>
             <div class="form-section">
-                <form action="" method="post">
-                    <fieldset>
-                        <legend>Let's do it!</legend>
-                        <input type="text">
-                        <input type="text">
-                        <input type="email">
-                        <input type="tel">
-                        <input type="password">
-                        <input type="password">
+                <form id="sign-up-form" action="#" method="post">
+                    <fieldset class="form-item-wrapper">
+                        <legend>Let's do this!</legend>
+                        <div class="row">
+                            <div class="form-item">   
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="fname" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="lname" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="phone-num">PHONE NUMBER</label>
+                                <input type="tel" id="phone-num" name="phone-number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item">   
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="confirmed-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirmed-password" name="confirmed-password" required>
+                            </div>
+                        </div>                       
                     </fieldset>
                 </form>
             </div>
             <div class="account-actions-section">
-
+                <button type="submit" form="sign-up-form">Submit</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
 
         </div>
