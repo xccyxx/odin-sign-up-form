@@ -40,6 +40,7 @@ body {
     flex-basis: 35%;
     position: relative;
     overflow: hidden;
+    background-repeat: no-repeat; 
 }
 
 .main-content {
@@ -64,8 +65,23 @@ body {
     height: 150px;
 }
 
-  .image-area .logo-section .brand-name {
-    color: lemonchiffon;
-    font-size: 3.5rem;
-    font-family: "grenzeregular", var(--system-ui);
-  }
+.image-area .logo-section .brand-name {
+color: lemonchiffon;
+font-size: 3.5rem;
+font-family: "grenzeregular", var(--system-ui);
+}
+
+.image-area .credit-section {
+    font-size: 0.9rem;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.image-area > .credit-section > p > a {
+    color: inherit;
+}
