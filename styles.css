@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: "bitterregular", var(--system-ui);
+    font-family: Arial, var(--system-ui), sans-serif;
 }
 
 .flex-body {
@@ -43,9 +43,7 @@ body {
     background-repeat: no-repeat; 
 }
 
-.main-content {
-    flex-basis: 65%;
-}
+
 
 .image-area .logo-section {
     position: absolute;
@@ -72,7 +70,7 @@ font-family: "grenzeregular", var(--system-ui);
 }
 
 .image-area .credit-section {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: white;
     position: absolute;
     width: 100%;
@@ -84,4 +82,30 @@ font-family: "grenzeregular", var(--system-ui);
 
 .image-area > .credit-section > p > a {
     color: inherit;
+}
+
+.main-content {
+    flex-basis: 65%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.main-content .introduction-section {
+    font-family: "bitterregular", var(--system-ui);
+}
+
+.main-content .introduction-section > p:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.main-content .form-section form {
+
+}
+
+.main-content .form-section fieldset {
+    border: 0;
+    padding: 0;
 }
