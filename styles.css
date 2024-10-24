@@ -26,12 +26,12 @@
 }
 
 body {
-    font-family: var(--system-ui), sans-serif;
+    font-family: "Segoe UI", var(--system-ui);
 }
 
 .flex-body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .image-area {
@@ -42,8 +42,6 @@ body {
     overflow: hidden;
     background-repeat: no-repeat; 
 }
-
-
 
 .logo-section {
     position: absolute;
@@ -95,12 +93,12 @@ font-family: "grenzeregular", var(--system-ui);
 
 .main-content > * {
     padding: 0 3.5rem;
-    /* border: red solid; */
 }
 
 .introduction-section {
     font-family: "bitterregular", var(--system-ui);
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 2rem;
 }
 
 .introduction-section > p:first-of-type {
@@ -110,10 +108,10 @@ font-family: "grenzeregular", var(--system-ui);
 .form-section {
     background-color: white;
     font-weight: 600;
-    margin-top: 2.5rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-item-wrapper > legend {
@@ -135,6 +133,7 @@ font-family: "grenzeregular", var(--system-ui);
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .form-section fieldset {
@@ -151,5 +150,36 @@ font-family: "grenzeregular", var(--system-ui);
     width: 25rem;
     padding: 0.6rem;
     border-radius: 3px;
-    border: rgb(182, 182, 182) solid 1px;
+    border: #E5E7EB solid 2px;
+}
+
+.account-actions-section > .submit-button {
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 1rem;
+    width: 13rem;
+    border-radius: 10px;
+}
+
+.account-actions-section a {
+    color: #596D48;
+}
+
+.form-section input:focus {
+    outline-color: rgba(0, 0, 255, 0.658);
+}
+
+.form-section [type="password"]:invalid {
+    outline-color: red;
+}
+
+input[type="password"]:invalid + span::after {
+    content: "* Invalid Password";
+    color: red;
+    font-size: 0.7rem;
+    position: absolute;
+    left: 3px;
+    bottom: -15px;
 }
