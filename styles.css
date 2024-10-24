@@ -167,12 +167,12 @@ font-family: "grenzeregular", var(--system-ui);
     color: #596D48;
 }
 
-.form-section input:focus {
-    outline-color: rgba(0, 0, 255, 0.658);
+.form-section input[type="password"]:invalid {
+    outline: 2px solid red;
 }
 
-.form-section [type="password"]:invalid {
-    outline-color: red;
+.form-section input:focus {
+    outline-color: rgba(0, 0, 255, 0.658);
 }
 
 input[type="password"]:invalid + span::after {
